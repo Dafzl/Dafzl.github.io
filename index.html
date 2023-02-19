@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daoud Afzal Folio.</title>
+    <link rel="stylesheet" href="Code/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/32b5958351.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+ 
+<body>
+    <!----------------------Home---------------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo-"><!--maybe in future-->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#accomp">Accomplishment</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li class="btn-contact"><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h3>Hi, There!</h3>
+                <h1>I'm <span class="input"></span></h1>
+                <p>I'm trying to learn programming and this is my first website.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------------About----------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Hubble-Pillars-of-Creation.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Daoud</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('myself')">Myself</p>
+                        <p class="tab-links" onclick="opentab('sports')">Sports</p>
+                        <p class="tab-links" onclick="opentab('interests')">Interests</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="myself">
+                        <ul>
+                            <li><span>Name</span><br>Daoud Afzal</li>
+                            <li><span>Date of Birth</span><br>24/08/07</li>
+                            <li><span>Nationality</span><br>Belgian</li>
+                            <li><span>Ethnicity</span><br>Pakistani</li>
+                            <li><span>Religion</span><br>Islam</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="sports">
+                        <ul>
+                            <li><span>Cricket</span><br>An opener and wicket-keeper. Played for PCCB (2021-2022).<br><a href="https://crichq.com/players/3296703/statistics">My stats</a></li>
+                            <li><span>Football</span><br>Fan of Bayern München and Manchester City.</li>
+                            <li><span>Tennis</span><br>Fan of Nadal and Medvedev</li>
+                            <li><span>Ice-Skating</span><br>Just like it because my friends do it.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="interests">
+                        <ul>
+                            <li><span>Programming</span><br>Started programming when I was 12 years old.</li>
+                            <li><span>Maths</span><br>Fun if I understand it.</li>
+                            <li><span>Science</span><br>Liked science since childhood.</li>
+                            <li><span>Astronomy</span><br>It's just fascinating</li>
+                            <li><span>Religion</span><br>Memorized 1/3 of the Quran</li>
+                            <li><span>Philosophy</span><br>Huge fan of stoicism and metaphysics</li>
+                            <li><span>Human behaviour and psychology</span><br>Read books about it and found it interesting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------------Skills------------------------>
+    <div class="container">
+        <h1 class="sub-title" style="margin-top: 50px;">My Skills</h1>
+        <div class="skill">
+            <h2>- Working</h2>
+            <li><h3>Leadership</h3>
+                <span class="bar"><span class="leadership"></span></span>
+            </li>
+            <li><h3>Teamwork</h3>
+                <span class="bar"><span class="teamwork"></span></span>
+            </li>
+            <li><h3>Communication</h3>
+                <span class="bar"><span class="communication"></span></span>
+            </li>
+            <br>
+            <h2>- Languages</h2>
+            <li><h3>English</h3>
+                <span class="bar"><span class="english"></span></span>
+            </li>
+            <li><h3>Français</h3>
+                <span class="bar"><span class="french"></span></span>
+            </li>
+            <li><h3>Nederlands</h3>
+                <span class="bar"><span class="dutch"></span></span>
+            </li>
+            <li><h3>Deutsch</h3>
+                <span class="bar"><span class="german"></span></span>
+            </li>
+            <li><h3>اردو</h3>
+                <span class="bar"><span class="urdu"></span></span>
+            </li>
+            <li><h3>پنجابی</h3>
+                <span class="bar"><span class="punjabi"></span></span>
+            </li>
+            <li><h3>Русский</h3>
+                <span class="bar"><span class="russian"></span></span>
+            </li>
+            <br>
+            <h2>- Coding</h2>
+            <li><h3>HTML</h3>
+                <span class="bar"><span class="html"></span></span>
+            </li>
+            <li><h3>CSS</h3>
+                <span class="bar"><span class="css"></span></span>
+            </li>
+            <li><h3>JAVASCRIPT</h3>
+                <span class="bar"><span class="javascript"></span></span>
+            </li>
+        </div>
+    </div>
+    
+
+    <!----------------------Accomplishments------------------------>
+    <div id="accomp">
+        <div class="container">
+            <h1 class="sub-title">My Accomplishments</h1>
+            <div class="accomp-list">
+                <div>
+                    <i class="fa-solid fa-display"></i>
+                    <h2>IT</h2>
+                    <p>The first things that I learned and the first certificate in IT that I got was Microsoft Office in 2018 when I was 11 years old.
+                        Soon after that I got my first ever pc and started learning programming. In 2019 I got the CS50 certificate of Harvard and after that I started learning
+                        hacking and still am.
+                    </p>
+                    <!--<a href="">Learn more</a>-->
+                </div>
+                <div>
+                    <i class="fa-solid fa-school"></i>
+                    <h2>School</h2>
+                    <p>In kindergarten I was ranked as the best child in maths of my age in my school. In primary I always competed for the top 3.
+                         In my sixth year I got 96% total and got the highest total of the school. In my seventh year I got ranked as one of the best in Flanders in maths.
+                          After that I just became dumb.
+                    </p>
+                    <!--<a href="">Learn more</a>-->
+                </div>
+                <div>
+                    <i class="fa-solid fa-list-ul"></i>
+                    <h2>Other</h2>
+                    <p>- I have memorized 1/3 of the Quran <br>- I know 7 languages <br>- I was the 2nd best batsman in BCF u15</p>
+                    <!--<a href="">Learn more</a> maybe in future-->
+                </div>
+            </div>
+        </div>  
+    </div>
+
+
+    <!---------------------Portfolio---------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/Man.jpg">
+                    <div class="layer">
+                        <h3>No works yet</h3>
+                        <p>Will be coming soon!!</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Man.jpg">
+                    <div class="layer">
+                        <h3>No works yet</h3>
+                        <p>Will be coming soon!!</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Man.jpg">
+                    <div class="layer">
+                        <h3>No works yet</h3>
+                        <p>Will be coming soon!!</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="butn">See more</a>
+        </div> 
+    </div>
+    <hr><br>
+
+
+    <!----------------------Contact----------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">  
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>daoudafzal07@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+32 473 62 07 36</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.instagram.com/daoudafzal/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Images/Man.jpg" download class="butn btn2">Download Image</a>
+                </div>
+                <div class="contact-message">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="butn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Daoud. Made with Dafzl</p>
+        </div>
+    </div>
+
+
+    <!----------------------Scripts----------------------->
+    <script src="Code/script.js"></script>
+
+    <script src="Code/typed.js"></script>
+    <script>
+        var typed = new Typed('.input', {
+            strings:['Daoud Afzal.', 'Dahoot.', 'a programmer.', 'an idiot.'],
+            typeSpeed: 100,
+            backSpeed: 80,
+            loop:true
+        });
+    </script>
+</body>
+</html>
