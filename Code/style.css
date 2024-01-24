@@ -262,7 +262,7 @@ nav li.btn-contact:hover a{
 
 .achiev-list div a{
     text-decoration: none;
-    color: white;
+    color: rgb(11, 173, 144);
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
@@ -272,6 +272,27 @@ nav li.btn-contact:hover a{
     color: white;
     background: #15b3ab;
     transform: translateY(-10px);
+}
+
+.achiev-list div:hover a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+.achiev-list a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: .5s;
+}
+
+.achiev-list a:hover::after{
+    width: 100%;
 }
 
 /*----------------Works----------------*/
@@ -501,17 +522,17 @@ form .btn2{
 
 /*----------------animation percentage skill------------------*/
 .leadership{
-    width: 80%;
+    width: 65%;
     animation: leadership 3s;
 }
 
 .teamwork{
-    width: 65%;
+    width: 80%;
     animation: teamwork 3s;
 }
 
 .communication{
-    width: 35%;
+    width: 30%;
     animation: communication 3s;
 }
 
@@ -522,13 +543,28 @@ form .btn2{
 }
 
 .css{
-    width: 70%;
+    width: 50%;
     animation: css 3s;
 }
 
 .javascript{
-    width: 50%;
+    width: 45%;
     animation: javascript 3s;
+}
+
+.c{
+    width: 90%;
+    animation: c 3s;
+}
+
+.sql{
+    width: 35%;
+    animation: sql 3s;
+}
+
+.python{
+    width: 65%;
+    animation: python 3s;
 }
 
 .english{
@@ -537,32 +573,32 @@ form .btn2{
 }
 
 .french{
-    width: 70%;
+    width: 60%;
     animation: french 3s;
 }
 
 .dutch{
-    width: 85%;
+    width: 87%;
     animation: dutch 3s;
 }
 
 .german{
-    width: 40%;
+    width: 15%;
     animation: german 3s;
 }
 
 .urdu{
-    width: 80%;
+    width: 75%;
     animation: urdu 3s;
 }
 
 .punjabi{
-    width: 65%;
+    width: 50%;
     animation: punjabi 3s;
 }
 
 .russian{
-    width: 55%;
+    width: 10%;
     animation: russian 3s;
 }
 
@@ -572,7 +608,7 @@ form .btn2{
         width: 0%;
     }
     100%{
-        width: 80%;
+        width: 65%;
     }
 }
 
@@ -581,7 +617,7 @@ form .btn2{
         width: 0%;
     }
     100%{
-        width: 35%;
+        width: 30%;
     }
 }
 
@@ -590,7 +626,7 @@ form .btn2{
         width: 0%;
     }
     100%{
-        width: 65%;
+        width: 80%;
     }
 }
 
@@ -608,7 +644,7 @@ form .btn2{
         width: 0%;
     }
     100%{
-        width: 60%;
+        width: 50%;
     }
 }
 
@@ -617,7 +653,34 @@ form .btn2{
         width: 0%;
     }
     100%{
-        width: 40%;
+        width: 45%;
+    }
+}
+
+@keyframes c{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes sql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 35%;
+    }
+}
+
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
     }
 }
 
@@ -635,7 +698,7 @@ form .btn2{
         width: 0%;
     }
     100%{
-        width: 70%;
+        width: 60%;
     }
 }
 
@@ -644,7 +707,7 @@ form .btn2{
         width: 0%;
     }
     100%{
-        width: 85%;
+        width: 87%;
     }
 }
 
@@ -653,7 +716,7 @@ form .btn2{
         width: 0%;
     }
     100%{
-        width: 40%;
+        width: 15%;
     }
 }
 
@@ -662,7 +725,7 @@ form .btn2{
         width: 0%;
     }
     100%{
-        width: 80%;
+        width: 75%;
     }
 }
 
@@ -671,7 +734,7 @@ form .btn2{
         width: 0%;
     }
     100%{
-        width: 65%;
+        width: 50%;
     }
 }
 
@@ -680,7 +743,7 @@ form .btn2{
         width: 0%;
     }
     100%{
-        width: 55%;
+        width: 10%;
     }
 }
 /*---------------------------Smaller Screens------------------------*/
