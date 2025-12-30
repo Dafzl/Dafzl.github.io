@@ -126,7 +126,7 @@ nav li.btn-contact:hover a{
 }
 
 /*-------------------About----------------*/
-#About{
+#Who \I \am{
     padding: 80px 0;
     color: #ababab;
     background-color: #1B172B;
@@ -184,7 +184,7 @@ nav li.btn-contact:hover a{
 
 
 .tab-links.active-link::after{
-    width: 70%;
+    width: 100%;
 }
 
 .tab-contents ul li{
@@ -521,35 +521,19 @@ form .btn2{
 }
 
 /*----------------animation percentage skill------------------*/
-.leadership{
+.experimental{
+    width: 70%;
+    animation: experimental 3s;
+}
+
+.analysis{
+    width: 85%;
+    animation: analysis 3s
+}
+
+.fabrication{
     width: 65%;
-    animation: leadership 3s;
-}
-
-.teamwork{
-    width: 80%;
-    animation: teamwork 3s;
-}
-
-.communication{
-    width: 30%;
-    animation: communication 3s;
-}
-
-
-.html{
-    width: 90%;
-    animation: html 3s;
-}
-
-.css{
-    width: 50%;
-    animation: css 3s;
-}
-
-.javascript{
-    width: 45%;
-    animation: javascript 3s;
+    animation: fabrication 3s
 }
 
 .c{
@@ -557,29 +541,44 @@ form .btn2{
     animation: c 3s;
 }
 
+.cpp{
+    width: 35%;
+    animation: cpp 3s; 
+}
+
+.rust{
+    width: 25%;
+    animation: rust 3s;
+}
+
+.python{
+    width: 90%;
+    animation: python 3s;
+}
+
 .sql{
     width: 35%;
     animation: sql 3s;
 }
 
-.python{
-    width: 65%;
-    animation: python 3s;
+.latex{
+    width: 95%;
+    animation: latex 3s;
 }
 
 .english{
-    width: 90%;
+    width: 87%;
     animation: english 3s;
-}
-
-.french{
-    width: 60%;
-    animation: french 3s;
 }
 
 .dutch{
     width: 87%;
     animation: dutch 3s;
+}
+
+.french{
+    width: 60%;
+    animation: french 3s;
 }
 
 .german{
@@ -597,13 +596,26 @@ form .btn2{
     animation: punjabi 3s;
 }
 
-.russian{
-    width: 10%;
-    animation: russian 3s;
+/*---------------------------percentages skills------------------------*/
+@keyframes experimental{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
 }
 
-/*---------------------------percentages skills------------------------*/
-@keyframes leadership{
+@keyframes analysis{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+@keyframes fabrication{
     0%{
         width: 0%;
     }
@@ -612,25 +624,7 @@ form .btn2{
     }
 }
 
-@keyframes communication{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 30%;
-    }
-}
-
-@keyframes teamwork{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 80%;
-    }
-}
-
-@keyframes html{
+@keyframes c{
     0%{
         width: 0%;
     }
@@ -639,25 +633,25 @@ form .btn2{
     }
 }
 
-@keyframes css{
+@keyframes cpp{
     0%{
         width: 0%;
     }
     100%{
-        width: 50%;
+        width: 35%;
     }
 }
 
-@keyframes javascript{
+@keyframes rust{
     0%{
         width: 0%;
     }
     100%{
-        width: 45%;
+        width: 25%;
     }
 }
 
-@keyframes c{
+@keyframes python{
     0%{
         width: 0%;
     }
@@ -675,12 +669,12 @@ form .btn2{
     }
 }
 
-@keyframes python{
+@keyframes latex{
     0%{
         width: 0%;
     }
     100%{
-        width: 65%;
+        width: 95%;
     }
 }
 
@@ -689,16 +683,7 @@ form .btn2{
         width: 0%;
     }
     100%{
-        width: 90%;
-    }
-}
-
-@keyframes french{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 60%;
+        width: 87%;
     }
 }
 
@@ -708,6 +693,15 @@ form .btn2{
     }
     100%{
         width: 87%;
+    }
+}
+
+@keyframes french{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
     }
 }
 
@@ -738,14 +732,7 @@ form .btn2{
     }
 }
 
-@keyframes russian{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 10%;
-    }
-}
+
 /*---------------------------Smaller Screens------------------------*/
 nav .fas{
     display: none;
